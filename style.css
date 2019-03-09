@@ -1,0 +1,89 @@
+body, html {
+height: 100;
+    margin: 0;
+    font-size: 1em;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1 , .pimg2, .pimg3, .pimg4{
+position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
+    fixed = parallax
+    scroll = normal
+    */
+}
+
+
+.pimg1{
+background-image: url(images/landing.jpeg);
+    min-height: 1000px;
+
+}
+
+.pimg2{
+background-image: url(images/middle.jpeg);
+    min-height: 500px;
+
+}
+
+.pimg3{
+background-image: url(images/last.jpeg);
+    min-height: 500px;
+    }
+
+.pimg4{
+background-image: url(images/closing.jpeg);
+    min-height: 1000px;
+
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+
+}
+.section-light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark {
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext {
+position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 1.5em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    }
+
+
+
+.ptext .border {
+background-color: #111;
+color: #fff;
+padding: 1.2em;
+
+}
+
+.ptext .border.transp {
+background-color: transparent;
+
+}
+
+
+
