@@ -1,5 +1,6 @@
-body, html {
-height: 100;
+body,
+html {
+    height: 100;
     margin: 0;
     font-size: 1em;
     font-family: "Lato", sans-serif;
@@ -7,10 +8,11 @@ height: 100;
     line-height: 1.8em;
     color: #666;
 }
+
 /********NAVBAR **********************************************/
 
 ul {
-margin: 0;
+    margin: 0;
     padding: 0;
     display: flex;
     background: rgba(51, 51, 51, 0.8);
@@ -34,7 +36,7 @@ ul li a {
     color: #fff;
     text-transform: uppercase;
     transition: 0.5s;
-    }
+}
 
 ul:hover li a {
     transform: scale(1.5);
@@ -47,7 +49,8 @@ ul li a:hover {
     opacity: 1;
     filter: blur(0);
 }
-ul li a:before{
+
+ul li a:before {
     content: "";
     position: absolute;
     top: 0;
@@ -55,17 +58,47 @@ ul li a:before{
     width: 100%;
     height: 100%;
     background: #ff497c;
-    transition:transform 1s;
+    transition: transform 1s;
     transform-origin: right;
     transform: scaleX(0);
     z-index: -1;
 
-}ul li a:hover:before{
- transition:transform 1s;
+}
+
+ul li a:hover:before {
+    transition: transform 1s;
     transform-origin: left;
     transform: scaleX(1);
 
-    }
+}
+
+nav {
+    display: none;
+}
+
+#menu:checked ~ nav {
+    display: block;
+
+}
+
+#menu {
+    display: none;
+
+}
+
+.burgerMenu {
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    color: yellowgreen;
+    margin-right: 1.5em;
+    margin-top: .5em;
+    font-size: 2em;
+    cursor: pointer;
+}
+
 
 /******** end of navbar NAVBAR  **********************************************/
 
@@ -75,8 +108,11 @@ ul li a:before{
 
 
 
-.pimg1 , .pimg2, .pimg3, .pimg4{
-position: relative;
+.pimg1,
+.pimg2,
+.pimg3,
+.pimg4 {
+    position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: cover;
@@ -90,25 +126,25 @@ position: relative;
 }
 
 
-.pimg1{
-background-image: url(images/landing.jpeg);
+.pimg1 {
+    background-image: url(images/landing.jpeg);
     min-height: 1000px;
 
 }
 
-.pimg2{
-background-image: url(images/middle.jpeg);
+.pimg2 {
+    background-image: url(images/middle.jpeg);
     min-height: 500px;
 
 }
 
-.pimg3{
-background-image: url(images/last.jpeg);
+.pimg3 {
+    background-image: url(images/last.jpeg);
     min-height: 500px;
-    }
+}
 
-.pimg4{
-background-image: url(images/closing.jpeg);
+.pimg4 {
+    background-image: url(images/closing.jpeg);
     min-height: 1000px;
 
 }
@@ -118,17 +154,19 @@ background-image: url(images/closing.jpeg);
     padding: 50px 80px;
 
 }
+
 .section-light {
     background-color: #f4f4f4;
     color: #666;
 }
+
 .section-dark {
     background-color: #282e34;
     color: #ddd;
 }
 
 .ptext {
-position: absolute;
+    position: absolute;
     top: 50%;
     width: 100%;
     text-align: center;
@@ -136,21 +174,22 @@ position: absolute;
     font-size: 1.5em;
     letter-spacing: 5px;
     text-transform: uppercase;
-    }
+}
 
 
 
 .ptext .border {
-background-color: #111;
-color: #fff;
-padding: 1.2em;
+    background-color: #111;
+    color: #fff;
+    padding: 1.2em;
 
 }
 
 .ptext .border.transp {
-background-color: transparent;
+    background-color: transparent;
 
 }
+
 /******** end of  home page and sections **********************************************/
 
 
@@ -159,10 +198,9 @@ background-color: transparent;
 
 /******** About us card **********************************************/
 
-.card
-{
+.card {
     position: absolute;
-  top: 50%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
@@ -194,7 +232,7 @@ background-color: transparent;
 
 
 
-.card .back{
+.card .back {
     position: absolute;
     top: 0;
     left: 0;
@@ -204,7 +242,7 @@ background-color: transparent;
     backface-visibility: hidden;
     transform: rotateX(180deg);
     transition: 0.5s;
-        overflow-x: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -215,6 +253,7 @@ background-color: transparent;
 
 
 }
+
 .card .back:before {
     content: "";
     position: absolute;
@@ -222,7 +261,7 @@ background-color: transparent;
     left: -50%;
     width: 100%;
     height: 100%;
-    background: rgba(225,225,225,0.2);
+    background: rgba(225, 225, 225, 0.2);
 
 
 
@@ -238,10 +277,10 @@ background-color: transparent;
     text-align: center;
     padding: 20px;
     box-sizing: border-box;
-    }
+}
 
 .card .back .details h2 {
-margin: 0;
+    margin: 0;
     padding: 0;
     font-size: 24px;
     color: #fff;
@@ -260,24 +299,8 @@ margin: 0;
     width: 125px;
     height: 125px;
     position: absolute;
-   z-index: 1;
+    z-index: 1;
     margin-left: 1em;
     margin-top: .5em;
-}
-
-nav {display: none;
-}
-#menu:checked ~ nav{
-  display:block;
-
-}
-#menu{
-  display:none;
-
-}
-
-nav{
-display: inline-block;
-
-
+    cursor: pointer;
 }
