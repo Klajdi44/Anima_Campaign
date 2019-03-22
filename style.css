@@ -128,7 +128,7 @@ nav {
 
 .pimg1 {
     background-image: url(images/landing.jpeg);
-    min-height: 100vh;
+    min-height: 60vw;
 
 }
 
@@ -149,7 +149,7 @@ nav {
 
 }.aboutIMG {
     background-image: url(images/team.jpg);
-    min-height: 60vh;
+    min-height: 65vh;
 
 }
 
@@ -175,7 +175,7 @@ nav {
     width: 100%;
     text-align: center;
     color: #000;
-    font-size: 1.5em;
+    font-size: 1.1em;
     letter-spacing: 5px;
     text-transform: uppercase;
 }
