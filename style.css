@@ -472,6 +472,63 @@ nav {
 
 /******** end of quote box **********************************************/
 
+
+/******** preloader **********************************************/
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 2px solid #333;
+    position: absolute;
+    border-radius: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border-top: 3px solid #FEA83A;
+    animation:  spin 1s infinite linear;
+}
+
+
+@keyframes spin {
+
+    from {
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+
+}
+
+
+
+
+
+
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background:#495761;
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.overlayPicture {
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     height: 45vw;
+    width: 45vw;
+}
+
+/********end of preloader **********************************************/
+
+
+
 #ourTeam {
     background-color: rgba(51, 51, 51, 0.8);
 
@@ -503,4 +560,5 @@ nav {
 
 
 }
+
 
