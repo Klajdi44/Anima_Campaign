@@ -7,6 +7,7 @@ html {
     font-weight: 400;
     line-height: 1.8em;
     color: #666;
+    scroll-behavior: smooth;
 }
 
 /********NAVBAR **********************************************/
@@ -149,7 +150,7 @@ nav {
 
 }.aboutIMG {
     background-image: url(images/team.jpg);
-    min-height: 65vh;
+    min-height: 100vh;
 
 }
 
@@ -194,6 +195,21 @@ nav {
 
 }
 
+#aboutText{
+    animation:glow 2s alternate infinite;
+  cursor: pointer;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #a4f287;
+  }
+}
+
+
 /******** end of  home page and sections **********************************************/
 
 
@@ -209,8 +225,9 @@ nav {
           grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
           grid-gap: 2em;
     padding: 0 1em;
-    padding-top: 1em;
+     padding-top: 1em;
     padding-bottom: 1em;
+
 }
 
 .card {
@@ -223,6 +240,10 @@ nav {
     transform-style: preserve-3d;
     perspective: 600px;
     transition: 0.5s;
+    display: none;
+
+
+
 }
 
 .card .front {
@@ -480,6 +501,6 @@ nav {
 }
 
 
-}
 
+}
 
