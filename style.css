@@ -9,6 +9,7 @@ html {
     line-height: 1.8em;
     color: #666;
     background-color: #3C6D65;
+    -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
 }
 
@@ -548,6 +549,7 @@ position: relative;
     position: fixed;
     left: 0;
     top: 0;
+    display: none;
 }
 
 .overlayPicture {
