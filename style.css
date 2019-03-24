@@ -120,7 +120,7 @@ nav {
 
 
 
-.pimg2,
+.pimg0,.pimg2,
  .aboutIMG {
     position: relative;
     opacity: 0.70;
@@ -162,6 +162,12 @@ position: relative;
     */
 }
 
+.pimg0{background-image: url(images/blackberries.jpg);
+        min-height:90vh;
+
+
+
+}
 .pimg1 {
     background-image: url(images/landing.png);
     min-height:100vh;
@@ -549,7 +555,6 @@ position: relative;
     position: fixed;
     left: 0;
     top: 0;
-    display: none;
 }
 
 .overlayPicture {
@@ -789,5 +794,46 @@ color: #fff;}
     }
     100%{left: -400%;}
 
+
+}
+
+.description {
+    color: #333;
+    margin-left: .5em;
+
+}
+
+.h1Recipes {
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.headH2 {
+    color: #333;
+    text-align: center;
+}
+
+.recipeImg {
+    width:100%;
+    height: 100%;
+
+}
+
+#wrapperRecipes {
+     display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
+    grid-gap: 1.5em;
+
+
+}
+
+.dishes {
+     margin: 1em;
+    border: 2px solid #fff;
+    background-color:#fff;
+    border-radius: 5%;
+    overflow: hidden;
 
 }
