@@ -1,5 +1,6 @@
 body,
 html {
+    overflow-x: hidden;
     height: 100;
     margin: 0;
     font-size: 1em;
@@ -547,7 +548,6 @@ position: relative;
     position: fixed;
     left: 0;
     top: 0;
-    display: none;
 }
 
 .overlayPicture {
@@ -559,14 +559,14 @@ position: relative;
     width: 45vw;
 }
 
-/********end of preloader **********************************************/
+/********end of preloader *//**********************************************/
 
 /********HOMEPAGE**********************************************/
 
 
 #wrapperLars {
     display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+          grid-template-columns: repeat(auto-fit, minmax(550px, 2fr));
 
 
 }
@@ -706,6 +706,18 @@ color: #fff;}
 
     background-image: url(images/larsMobile.jpg);
     background-position:center;
+}
+
+
+}
+
+@media all and (min-width: 865px) {
+#slider figure img{
+    float: left;
+    width: 20%;
+    min-height: 65vh;
+    width: 1024px;
+    height: 734px
 
 
 }
@@ -717,3 +729,63 @@ color: #fff;}
 
 
 
+
+@media all and (max-width: 700px) {
+    #wrapperLars {
+    display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+}
+
+
+}
+
+
+
+
+
+
+
+
+#slider {
+    overflow: hidden;
+
+}
+
+#slider figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+#slider figure img{
+    float: left;
+    width: 20%;
+
+
+}
+
+@keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45% {left: -100%;
+    }
+    50%{left: -200%;
+    }
+    70%{left: -200%;
+    }
+    75%{left: -300%;
+    }
+    90%{left: -300%;
+    }
+    100%{left: -400%;}
+
+
+}
