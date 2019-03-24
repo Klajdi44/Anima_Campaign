@@ -119,11 +119,10 @@ nav {
 
 
 .pimg2,
-.pimg3,
  .aboutIMG {
     position: relative;
     opacity: 0.70;
-    background-position: cover;
+    background-position:center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -173,10 +172,6 @@ position: relative;
 
 }
 
-.pimg3 {
-    background-image: url(images/last.jpeg);
-    min-height: 45vh;
-}
 
 .pimg4 {
     background-image: url(images/Anima_logo3.png);
@@ -552,6 +547,7 @@ position: relative;
     position: fixed;
     left: 0;
     top: 0;
+    display: none;
 }
 
 .overlayPicture {
@@ -706,7 +702,13 @@ color: #fff;}
     .burgerMenu {
         z-index: 4;
 }
+    .pimg2{
 
+    background-image: url(images/larsMobile.jpg);
+    background-position:center;
+
+
+}
 
 
 }
