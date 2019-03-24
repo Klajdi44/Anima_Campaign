@@ -7,7 +7,15 @@ html {
     font-weight: 400;
     line-height: 1.8em;
     color: #666;
+    background-color: #3C6D65;
     scroll-behavior: smooth;
+}
+
+
+#ourTeam {
+    background-color: rgba(51, 51, 51, 0.8);
+
+
 }
 
 /********NAVBAR **********************************************/
@@ -109,13 +117,13 @@ nav {
 
 
 
-.pimg1,
+
 .pimg2,
 .pimg3,
-.pimg4, .aboutIMG {
+ .aboutIMG {
     position: relative;
     opacity: 0.70;
-    background-position: center;
+    background-position: cover;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -126,16 +134,42 @@ nav {
     */
 }
 
+.pimg1{
+ position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
+    fixed = parallax
+    scroll = normal
+    */
+}
+.pimg4{
+position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+    /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
+    fixed = parallax
+    scroll = normal
+    */
+}
 
 .pimg1 {
-    background-image: url(images/landing.jpeg);
-    min-height: 100vh;
+    background-image: url(images/landing.png);
+    min-height:100vh;
 
 }
 
 .pimg2 {
-    background-image: url(images/middle.jpeg);
-    min-height: 45vh;
+    background-image: url(images/lars.jpg);
+    min-height: 70vh;
 
 }
 
@@ -145,7 +179,7 @@ nav {
 }
 
 .pimg4 {
-    background-image: url(images/closing.jpeg);
+    background-image: url(images/Anima_logo3.png);
     min-height: 100vh;
 
 }.aboutIMG {
@@ -199,6 +233,10 @@ nav {
     animation:glow 2s alternate infinite;
   cursor: pointer;
 }
+#aboutText:hover{
+   background-color: #ff497c;
+}
+
 
 @keyframes glow {
   from {
@@ -527,15 +565,127 @@ nav {
 
 /********end of preloader **********************************************/
 
+/********HOMEPAGE**********************************************/
 
 
-#ourTeam {
-    background-color: rgba(51, 51, 51, 0.8);
+#wrapperLars {
+    display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+
+
+}
+
+.cardHp {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 340px;
+    transform-style: preserve-3d;
+    perspective: 600px;
+    transition: 0.5s;
+
+
+
+}
+
+.cardHp .front {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+    transition: 0.5s;
+}
+
+.cardHp:hover .front {
+    transform: rotateX(-180deg);
+
 
 
 }
 
 
+
+
+.cardHp .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    transition: 0.5s;
+    overflow-x: hidden;
+
+}
+
+
+.cardHp:hover .back {
+    transform: rotateX(0deg);
+
+
+
+}
+
+.cardHp .back:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(225, 225, 225, 0.2);
+
+
+
+
+}
+
+.cardHp .back .details {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.cardHp .back .details h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+
+.cardHp .back .details h2 span {
+    color: #FEA73B;
+    font-size: 20px;
+}
+
+
+.backP {
+color: #fff;}
+
+
+
+
+
+
+
+
+
+
+/********end of HOMEPAGE**********************************************/
 @media all and (max-width: 865px) {
 
     ul {
@@ -560,5 +710,8 @@ nav {
 
 
 }
+
+
+
 
 
