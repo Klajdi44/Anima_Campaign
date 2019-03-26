@@ -131,7 +131,7 @@ nav {
     background-attachment: fixed;
     /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
     fixed = parallax
-    scroll = normal
+    scroll = normalllllll
     */
 }
 
@@ -141,6 +141,23 @@ nav {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    background-image: url(images/pig_1-3.png);
+    min-height:85vh;
+    background-attachment: fixed;
+    /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
+    fixed = parallax
+    scroll = normal
+    */
+}
+
+.pimg4{
+position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 65vh;
+        background-image: url(images/Anima_logo3.png);
 
     background-attachment: fixed;
     /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
@@ -148,18 +165,23 @@ nav {
     scroll = normal
     */
 }
-.pimg4{
-position: relative;
+
+.pimg5{
+    position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-
+    background-image: url(images/barn.png);
+    min-height:85vh;
     background-attachment: fixed;
     /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
     fixed = parallax
     scroll = normal
     */
+
+
+
 }
 
 .pimg0{background-image: url(images/blackberries.jpg);
@@ -168,11 +190,7 @@ position: relative;
 
 
 }
-.pimg1 {
-    background-image: url(images/landing.png);
-    min-height:100vh;
 
-}
 
 .pimg2 {
     background-image: url(images/lars.jpg);
@@ -181,13 +199,9 @@ position: relative;
 }
 
 
-.pimg4 {
-    background-image: url(images/Anima_logo3.png);
-    min-height: 100vh;
-
-}.aboutIMG {
+.aboutIMG {
     background-image: url(images/team.jpg);
-    min-height: 100vh;
+    min-height: 62vh;
 
 }
 
@@ -281,7 +295,6 @@ position: relative;
     transform-style: preserve-3d;
     perspective: 600px;
     transition: 0.5s;
-    display: none;
 
 
 
@@ -680,15 +693,61 @@ position: relative;
 color: #fff;}
 
 
-
-
-
-
-
-
-
-
 /********end of HOMEPAGE**********************************************/
+
+
+/* recipes page /////////////////////////////////////*/
+
+.description {
+    color: #333;
+    margin-left: .5em;
+
+}
+
+.h1Recipes {
+    color: #fff;
+    text-align: center;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.headH2 {
+    color: #333;
+    text-align: center;
+}
+
+.recipeImg {
+    width:100%;
+    height: 100%;
+
+}
+
+#wrapperRecipes {
+     display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
+    grid-gap: 1.5em;
+
+
+}
+
+.dishes {
+     margin: 1em;
+    border: 2px solid #fff;
+    background-color:#fff;
+    border-radius: 5%;
+    overflow: hidden;
+
+}
+
+
+
+/* end of recipes page /////////////////////////////////////*/
+
+
+/* mediaqueries /////////////////////////////////////*/
+
+
+
 @media all and (max-width: 865px) {
 
     ul {
@@ -743,15 +802,20 @@ color: #fff;}
           grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
 }
 
+    #wrapperRecipes {
+     display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(325px, 2fr));
+    grid-gap: 1.5em;
 
+
+}
 }
 
 
+/*  end ofmediaqueries /////////////////////////////////////*/
 
 
-
-
-
+/*  slider for the pictures /////////////////////////////////////*/
 
 #slider {
     overflow: hidden;
@@ -796,44 +860,16 @@ color: #fff;}
 
 
 }
+/*  end of slider for the pictures /////////////////////////////////////*/
 
-.description {
-    color: #333;
-    margin-left: .5em;
 
-}
 
-.h1Recipes {
-    color: #fff;
-    text-align: center;
-    font-weight: 900;
-    font-size: 3em;
-}
 
-.headH2 {
-    color: #333;
-    text-align: center;
-}
-
-.recipeImg {
-    width:100%;
-    height: 100%;
-
-}
-
-#wrapperRecipes {
+.wrapperHome {
      display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
-    grid-gap: 1.5em;
-
-
-}
-
-.dishes {
-     margin: 1em;
-    border: 2px solid #fff;
-    background-color:#fff;
-    border-radius: 5%;
-    overflow: hidden;
-
+          grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+          grid-gap: 2em;
+    padding: 0 1em;
+     padding-top: 1em;
+    padding-bottom: 1em;
 }
