@@ -873,14 +873,12 @@ color: #000;
 
 
 @media all and (max-width: 768px) {
-.card:hover .front , .card:active .front {
+.card:active .front {
     transform: rotateX(-180deg);
 }
 
-.card:hover .back, .card:active .back{
+ .card:active .back{
     transform: rotateX(0deg);
-
-
 
 }
 
