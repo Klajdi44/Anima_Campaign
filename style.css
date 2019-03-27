@@ -148,10 +148,10 @@ nav {
     position: relative;
     opacity: 0.70;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(images/pig_1-3.png);
-    min-height: 85vh;
+    background-image: url(images/1st_scene.png);
+    min-height: 98vh;
     background-attachment: fixed;
     /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
     fixed = parallax
@@ -628,7 +628,7 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #000;
+    background: #fff;
     backface-visibility: hidden;
     transform: rotateX(0deg);
     transition: 0.5s;
@@ -712,12 +712,106 @@ nav {
 
 .wrapperHome {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
     grid-gap: 2em;
     padding: 0 1em;
     padding-top: 1em;
     padding-bottom: 1em;
 }
+
+
+
+
+
+.container {
+    width: 45vw;
+    height: 45vh;
+    background: #282e34;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+    box-sizing: content-box;
+    padding: 25px 20px;
+}
+
+.profile {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -70px;
+    left: calc(50% - 50px);
+}
+
+h1{
+margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 35px;
+    color:   #fff
+
+}
+
+
+.container input {
+width: 100%;
+    margin-bottom: 25px;
+
+}
+
+.container  input[type="text"] , [type="email"]
+{
+    border:none;
+    border-bottom: 3px solid #EC7756;
+    background: transparent;
+     outline: none;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.container  input[type="submit"]
+{
+    border:none;
+
+    background: #EC7756;
+    height: 40px;
+    font-size: 25px;
+     outline: none;
+}
+
+.container  input[type="submit"]:hover
+{
+color: aliceblue;
+    background-color: #ea5045
+
+}
+
+
+
+#wrapperSignUp{
+ display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 2fr));
+}
+
+video {
+    width: 70vw;
+    margin: 0 auto;
+    display: grid;
+    place-items: center;
+    padding: 1em 0em;
+
+}
+
+
+
+
+
+
+
+
 
 
 /********end of HOMEPAGE**********************************************/
@@ -867,7 +961,13 @@ nav {
 
     }
 
-
+#wrapperSignUp{
+    grid-gap: 5em;
+    margin: 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    }
 
 }
 
@@ -899,6 +999,8 @@ nav {
         background-image: url(images/larsMobile.jpg);
         background-position: center;
     }
+
+
 
 
 }
@@ -939,7 +1041,6 @@ nav {
         transform: rotateX(0deg);
 
     }
-
 
 
 
@@ -1065,6 +1166,8 @@ nav {
 }
 
 /*  end of slider for the pictures /////////////////////////////////////*/
+
+
 
 
 
