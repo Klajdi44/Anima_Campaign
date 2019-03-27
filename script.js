@@ -18,12 +18,12 @@ for (let i=0;i<flipCards.length;i+=1){
     }
 */
 
-
+//here is the preloader that is automatically closing after 3 seconds
 function preloader(secs) {
     if (secs >= 3) {
         document.getElementById("overlay").style.display = "none";
     } else {
-        setTimeout(function () {
+        setTimeout(function(){
             preloader(secs + 1);
         }, 1000);
     }

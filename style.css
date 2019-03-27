@@ -95,6 +95,14 @@ nav {
 #menu {
     display: none;
 
+}#menu1:checked ~ nav {
+    display: block;
+
+}
+
+#menu1 {
+    display: none;
+
 }
 
 .burgerMenu {
@@ -775,9 +783,9 @@ nav {
 .modal {
     display: none;
     width: 100%;
-    height: 100%;
     position: fixed;
-    z-index: 1;
+    height: 100%;
+    z-index: 4;
     left: 0;
     top: 0;
     overflow: auto;
