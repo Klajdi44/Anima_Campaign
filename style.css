@@ -824,12 +824,12 @@ nav {
 
 }
 
-.closeBtn {
+.closeBtn, .closeBtn1,.closeBtn2, .closeBtn3,.closeBtn4, .closeBtn5 {
     color: gray;
     font-size: 2em;
 }
 
-.closeBtn:hover {
+.closeBtn:hover, .closeBtn1:hover, .closeBtn2:hover, .closeBtn3:hover, .closeBtn4:hover, .closeBtn5:hover {
     color: #000;
     cursor: pointer;
 }
