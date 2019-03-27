@@ -120,11 +120,12 @@ nav {
 
 
 
-.pimg0,.pimg2,
- .aboutIMG {
+.pimg0,
+.pimg2,
+.aboutIMG {
     position: relative;
     opacity: 0.70;
-    background-position:center;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -135,14 +136,14 @@ nav {
     */
 }
 
-.pimg1{
- position: relative;
+.pimg1 {
+    position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(images/pig_1-3.png);
-    min-height:85vh;
+    min-height: 85vh;
     background-attachment: fixed;
     /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
     fixed = parallax
@@ -150,14 +151,14 @@ nav {
     */
 }
 
-.pimg4{
-position: relative;
+.pimg4 {
+    position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     min-height: 65vh;
-        background-image: url(images/Anima_logo3.png);
+    background-image: url(images/Anima_logo3.png);
 
     background-attachment: fixed;
     /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
@@ -166,14 +167,14 @@ position: relative;
     */
 }
 
-.pimg5{
+.pimg5 {
     position: relative;
     opacity: 0.70;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url(images/barn.png);
-    min-height:85vh;
+    min-height: 85vh;
     background-attachment: fixed;
     /* if YOU WANT TO REMOVE THE PARALLAX EFFECT THEN DO THIS :D
     fixed = parallax
@@ -184,8 +185,9 @@ position: relative;
 
 }
 
-.pimg0{background-image: url(images/blackberries.jpg);
-        min-height:90vh;
+.pimg0 {
+    background-image: url(images/blackberries.jpg);
+    min-height: 90vh;
 
 
 
@@ -246,22 +248,24 @@ position: relative;
 
 }
 
-#aboutText{
-    animation:glow 2s alternate infinite;
-  cursor: pointer;
+#aboutText {
+    animation: glow 2s alternate infinite;
+    cursor: pointer;
 }
-#aboutText:hover{
-   background-color: #ff497c;
+
+#aboutText:hover {
+    background-color: #ff497c;
 }
 
 
 @keyframes glow {
-  from {
-    box-shadow: 0 0 10px -10px #aef4af;
-  }
-  to {
-    box-shadow: 0 0 10px 10px #a4f287;
-  }
+    from {
+        box-shadow: 0 0 10px -10px #aef4af;
+    }
+
+    to {
+        box-shadow: 0 0 10px 10px #a4f287;
+    }
 }
 
 
@@ -277,10 +281,10 @@ position: relative;
 
 .wrapper {
     display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-          grid-gap: 2em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-gap: 2em;
     padding: 0 1em;
-     padding-top: 1em;
+    padding-top: 1em;
     padding-bottom: 1em;
 
 }
@@ -514,11 +518,12 @@ position: relative;
     right: 0;
     z-index: 1;
 }
+
 .wrapperQuote {
     position: relative;
-     display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
-          grid-gap: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+    grid-gap: 2em;
     margin-top: 1em;
 
 
@@ -534,13 +539,13 @@ position: relative;
     border: 2px solid #333;
     position: absolute;
     border-radius: 100%;
-    top:0;
+    top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     margin: auto;
     border-top: 3px solid #FEA83A;
-    animation:  spin 1s infinite linear;
+    animation: spin 1s infinite linear;
 }
 
 
@@ -548,10 +553,12 @@ position: relative;
 
     from {
         transform: rotate(0deg);
-    }to{
+    }
+
+    to {
         transform: rotate(360deg);
 
-}
+    }
 
 
 
@@ -563,7 +570,7 @@ position: relative;
 #overlay {
     height: 100%;
     width: 100%;
-    background:#495761;
+    background: #495761;
     z-index: 9999;
     position: fixed;
     left: 0;
@@ -571,20 +578,23 @@ position: relative;
 }
 
 .overlayPicture {
-     position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-        height: 35vh; width: 35vh;}
+    height: 35vh;
+    width: 35vh;
+}
 
-/********end of preloader *//**********************************************/
+/********end of preloader */
+/**********************************************/
 
 /********HOMEPAGE**********************************************/
 
 
 #wrapperLars {
     display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(550px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(550px, 2fr));
 
 
 }
@@ -688,7 +698,18 @@ position: relative;
 
 
 .backP {
-color: #fff;}
+    color: #fff;
+}
+
+
+.wrapperHome {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    grid-gap: 2em;
+    padding: 0 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
 
 
 /********end of HOMEPAGE**********************************************/
@@ -715,33 +736,43 @@ color: #fff;}
 }
 
 .recipeImg {
-    width:100%;
+    width: 100%;
     height: 100%;
 
 }
 
 #wrapperRecipes {
-     display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(440px, 2fr));
     grid-gap: 1.5em;
 
 
 }
 
-#dishes0, #dishes1, #dishes2, #dishes3, #dishes4, #dishes5 {
-     margin: 1em;
+#dishes0,
+#dishes1,
+#dishes2,
+#dishes3,
+#dishes4,
+#dishes5 {
+    margin: 1em;
     border: 2px solid #fff;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 5%;
     overflow: hidden;
     transition: all .3s ease-in-out;
 }
 
-#dishes0:hover, #dishes1:hover, #dishes2:hover, #dishes3:hover, #dishes4:hover, #dishes5:hover{
-     transform: scale(0.9);
+#dishes0:hover,
+#dishes1:hover,
+#dishes2:hover,
+#dishes3:hover,
+#dishes4:hover,
+#dishes5:hover {
+    transform: scale(0.9);
 }
 
-.modal{
+.modal {
     display: none;
     width: 100%;
     height: 100%;
@@ -750,16 +781,16 @@ color: #fff;}
     left: 0;
     top: 0;
     overflow: auto;
-    background-color: rgba(0,0,0,.5);
+    background-color: rgba(0, 0, 0, .5);
 }
 
 #modal h2 {
-margin: 0;
+    margin: 0;
 }
 
 .modalImg {
-        max-height:50vh;
-       border-radius: 5%;
+    max-height: 50vh;
+    border-radius: 5%;
 
 
 }
@@ -768,35 +799,38 @@ margin: 0;
 
 
 .modal-content {
-background-color: #f4f4f4;
+    background-color: #f4f4f4;
     margin: 20% auto;
     width: 60%;
-    box-shadow: 0 5px 8px 0 rgba(0,0,0,.2), 0 7px 20px 0 rgba(0,0,0,.17);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .17);
     animation: modalOpening;
     animation-duration: 1.5s;
     display: grid;
-grid-template-columns: 1fr  1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     padding: 10px 20px;
     border-radius: 7px;
 
+}
+
+@keyframes modalOpening {
+    from {
+        opacity: 0;
     }
 
-@keyframes modalOpening{
-    from{ opacity: 0;
-}
-    to {opacity: 1;
-}
+    to {
+        opacity: 1;
+    }
 
 }
 
-.closeBtn{
-color: gray;
+.closeBtn {
+    color: gray;
     font-size: 2em;
 }
 
-.closeBtn:hover{
-color: #000;
+.closeBtn:hover {
+    color: #000;
     cursor: pointer;
 }
 
@@ -812,16 +846,16 @@ color: #000;
 /* mediaqueries /////////////////////////////////////*/
 
 @media all and (max-width: 1100px) {
-        .modal-content {
-          display: block;
-         grid-template-columns: none;
+    .modal-content {
+        display: block;
+        grid-template-columns: none;
         grid-auto-rows: 1fr 1fr;
     }
 
-    .modalImg{
-    max-height: 40vh;
+    .modalImg {
+        max-height: 40vh;
 
-}
+    }
 
 
 
@@ -839,48 +873,62 @@ color: #000;
         margin: .5em;
     }
 
-    nav{
+    nav {
         position: relative;
         z-index: 3;
 
 
-}
+    }
+
     .burgerMenu {
         z-index: 4;
-}
-    .pimg2{
+    }
 
-    background-image: url(images/larsMobile.jpg);
-    background-position:center;
-}
+    .pimg2 {
+
+        background-image: url(images/larsMobile.jpg);
+        background-position: center;
+    }
 
 
 }
 
 @media all and (min-width: 865px) {
-#slider figure img{
-    float: left;
-    width: 20%;
-    min-height: 65vh;
-    width: 1024px;
-    height: 734px
-
-
-}
+    #slider figure img {
+        float: left;
+        width: 20%;
+        min-height: 65vh;
+        width: 1024px;
+        height: 734px
+    }
 
 
 }
 
 
 @media all and (max-width: 768px) {
-.card:hover .front , .card:active .front {
-    transform: rotateX(-180deg);
-}
 
-.card:hover .back, .card:active .back{
-    transform: rotateX(0deg);
+    .card:hover .front,
+    .card:active .front {
+        transform: rotateX(-180deg);
+    }
 
-}
+    .card:hover .back,
+    .card:active .back {
+        transform: rotateX(0deg);
+
+    }
+
+    .cardHp:hover .front,
+    .cardHp:active .front {
+        transform: rotateX(-180deg);
+    }
+
+    .cardHp:hover .back,
+    .cardHp:active .back {
+        transform: rotateX(0deg);
+
+    }
 
 
 
@@ -892,15 +940,15 @@ color: #000;
 
 @media all and (max-width: 700px) {
     #wrapperLars {
-    display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-}
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
+    }
 
     #wrapperRecipes {
-     display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(325px, 2fr));
-    grid-gap: 1.5em;
-}
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(325px, 2fr));
+        grid-gap: 1.5em;
+    }
 
     .modal-content {
         width: 90%;
@@ -908,23 +956,37 @@ color: #000;
     }
 
     .modal-content {
-          display: block;
-         grid-template-columns: none;
+        display: block;
+        grid-template-columns: none;
         grid-auto-rows: 1fr 1fr;
     }
 
 
 
 }
+
+
+@media all and (max-width: 425px) {
+    .wrapperHome {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+    grid-gap: 2em;
+    padding: 0 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+}
+
+
 @media all and (max-width: 365px) {
-  .modalImg{
-    max-height: 30vh;
+    .modalImg {
+        max-height: 30vh;
 
+    }
 }
 
 
-
-}
 
 
 /*  end ofmediaqueries /////////////////////////////////////*/
@@ -937,7 +999,7 @@ color: #000;
 
 }
 
-#slider figure{
+#slider figure {
     position: relative;
     width: 500%;
     margin: 0;
@@ -945,7 +1007,7 @@ color: #000;
     animation: 20s slider infinite;
 }
 
-#slider figure img{
+#slider figure img {
     float: left;
     width: 20%;
 
@@ -953,40 +1015,47 @@ color: #000;
 }
 
 @keyframes slider {
-    0%{
+    0% {
         left: 0;
     }
-    20%{left: 0;
+
+    20% {
+        left: 0;
     }
-    25%{
+
+    25% {
         left: -100%;
     }
-    45% {left: -100%;
+
+    45% {
+        left: -100%;
     }
-    50%{left: -200%;
+
+    50% {
+        left: -200%;
     }
-    70%{left: -200%;
+
+    70% {
+        left: -200%;
     }
-    75%{left: -300%;
+
+    75% {
+        left: -300%;
     }
-    90%{left: -300%;
+
+    90% {
+        left: -300%;
     }
-    100%{left: -400%;}
+
+    100% {
+        left: -400%;
+    }
 
 
 }
+
 /*  end of slider for the pictures /////////////////////////////////////*/
 
 
-
-
-.wrapperHome {
-     display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
-          grid-gap: 2em;
-    padding: 0 1em;
-     padding-top: 1em;
-    padding-bottom: 1em;
-}
 
 
