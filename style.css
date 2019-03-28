@@ -1,17 +1,31 @@
+@font-face {
+    font-family: champBold;
+    src: url(fonts/Champagne&LimousinesBold.ttf);
+}
+
+@font-face {
+    font-family: champRegular;
+    src: url(.//fonts/Champagne&Limousines.ttf);
+}
+
 body,
 html {
     overflow-x: hidden;
-    height:100%;
+    height: 100%;
     margin: 0;
-    font-size: 1em;
-    font-family: "Lato", sans-serif;
+    font-size: 1.1em;
     font-weight: 400;
     line-height: 1.8em;
     color: #666;
-    background-color: #3C6D65;
+    background-color: #dbe2e8;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
+    font-family: champBold;
+
 }
+
+
+
 
 
 #ourTeam {
@@ -20,13 +34,26 @@ html {
 
 }
 
+* h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: champBold;
+}
+
+* p {
+    font-family: champRegular;
+}
+
 /********NAVBAR **********************************************/
 
 ul {
     margin: 0;
     padding: 0;
     display: flex;
-    background: rgba(51, 51, 51, 0.8);
+    background: #495761;
     justify-content: center;
     align-items: center;
     padding: 1.1em;
@@ -68,7 +95,7 @@ ul li a:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: #ff497c;
+    background: #52bbb5;
     transition: transform 1s;
     transform-origin: right;
     transform: scaleX(0);
@@ -95,7 +122,9 @@ nav {
 #menu {
     display: none;
 
-}#menu1:checked ~ nav {
+}
+
+#menu1:checked ~ nav {
     display: block;
 
 }
@@ -106,16 +135,16 @@ nav {
 }
 
 .burgerMenu {
-    float: right;
     position: absolute;
     top: 0;
     right: 0;
     z-index: 2;
-    color: yellowgreen;
+    color: #d06f5f;
     margin-right: 1.5em;
     margin-top: .5em;
-    font-size: 2em;
+    font-size: 2.6em;
     cursor: pointer;
+
 }
 
 
@@ -227,7 +256,7 @@ nav {
 }
 
 .section-dark {
-    background-color: #282e34;
+    background-color: #495761;
     color: #ddd;
 }
 
@@ -245,10 +274,10 @@ nav {
 
 
 .ptext .border {
-    background-color: #111;
+    background-color: #495761;
     color: #fff;
     padding: 1.2em;
-
+    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ptext .border.transp {
@@ -262,17 +291,17 @@ nav {
 }
 
 #aboutText:hover {
-    background-color: #ff497c;
+    background-color: #d06f5f;
 }
 
 
 @keyframes glow {
     from {
-        box-shadow: 0 0 10px -10px #aef4af;
+        box-shadow: 0 0 10px -10px #fac0b4;
     }
 
     to {
-        box-shadow: 0 0 10px 10px #a4f287;
+        box-shadow: 0 0 10px 10px #fac0b4;
     }
 }
 
@@ -400,8 +429,9 @@ nav {
 
 
 .logo {
-    width: 125px;
-    height: 125px;
+    top: 0;
+    left: 0;
+    width: 10vw;
     position: absolute;
     z-index: 1;
     margin-left: 1em;
@@ -590,8 +620,7 @@ nav {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 35vh;
-    width: 35vh;
+    width: 25vw;
 }
 
 /********end of preloader */
@@ -607,20 +636,23 @@ nav {
 
 }
 
+
 .cardHp {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 300px;
-    height: 340px;
+    width: 400px;
+    height: 350px;
     transform-style: preserve-3d;
     perspective: 600px;
     transition: 0.5s;
+    box-shadow:  0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .17);
 
 
 
 }
+
 
 .cardHp .front {
     position: absolute;
@@ -636,6 +668,7 @@ nav {
 
 .cardHp:hover .front {
     transform: rotateX(-180deg);
+
 
 
 
@@ -712,7 +745,7 @@ nav {
 
 .wrapperHome {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 2fr));
     grid-gap: 2em;
     padding: 0 1em;
     padding-top: 1em;
@@ -726,7 +759,7 @@ nav {
 .container {
     width: 45vw;
     height: 45vh;
-    background: #282e34;
+    background: #495761;
     color: #fff;
     top: 50%;
     left: 50%;
@@ -744,55 +777,56 @@ nav {
     left: calc(50% - 50px);
 }
 
-h1{
-margin: 0;
+h1 {
+    margin: 0;
     padding: 0 0 20px;
     text-align: center;
     font-size: 35px;
-    color:   #fff
-
+    color: #fff
 }
 
 
 .container input {
-width: 100%;
+    width: 100%;
     margin-bottom: 25px;
-
-}
-
-.container  input[type="text"] , [type="email"]
-{
-    border:none;
-    border-bottom: 3px solid #EC7756;
-    background: transparent;
-     outline: none;
-    height: 50px;
     color: #fff;
-    font-size: 16px;
+
 
 }
 
-.container  input[type="submit"]
-{
-    border:none;
+.container input[type="text"],
+[type="email"] {
+    border: none;
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.27);
+    background: transparent;
+    outline: none;
+    height: 50px;
+    font-size: 16px;
+    font-family: champRegular;
 
-    background: #EC7756;
+}
+
+.container input[type="submit"] {
+    border: none;
+    font-family: champBold;
+    background: #52bbb5;
     height: 40px;
     font-size: 25px;
-     outline: none;
+    outline: none;
 }
 
-.container  input[type="submit"]:hover
-{
-color: aliceblue;
-    background-color: #ea5045
+.container input[type="submit"]:hover {
+    color: aliceblue;
+    background-color: rgb(69, 159, 154);
+    transition: .4s;
+
 
 }
 
 
 
-#wrapperSignUp{
- display: grid;
+#wrapperSignUp {
+    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(550px, 2fr));
 }
 
@@ -808,7 +842,14 @@ video {
 
 
 
+.challenge {
+    font-size: 3.3rem;
+}
 
+.challengeP {
+    font-size: 1.8em;
+    color: #fac0b4;
+}
 
 
 
@@ -928,12 +969,22 @@ video {
 
 }
 
-.closeBtn, .closeBtn1,.closeBtn2, .closeBtn3,.closeBtn4, .closeBtn5 {
+.closeBtn,
+.closeBtn1,
+.closeBtn2,
+.closeBtn3,
+.closeBtn4,
+.closeBtn5 {
     color: gray;
     font-size: 2em;
 }
 
-.closeBtn:hover, .closeBtn1:hover, .closeBtn2:hover, .closeBtn3:hover, .closeBtn4:hover, .closeBtn5:hover {
+.closeBtn:hover,
+.closeBtn1:hover,
+.closeBtn2:hover,
+.closeBtn3:hover,
+.closeBtn4:hover,
+.closeBtn5:hover {
     color: #000;
     cursor: pointer;
 }
@@ -961,14 +1012,20 @@ video {
 
     }
 
-#wrapperSignUp{
-    grid-gap: 5em;
-    margin: 0 auto;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    #wrapperSignUp {
+        grid-gap: 5em;
+        margin: 0 auto;
+        position: relative;
+        justify-content: center;
+        align-items: center;
     }
 
+    .logo {
+        width: 15vw;
+
+
+
+    }
 }
 
 
@@ -999,6 +1056,7 @@ video {
         background-image: url(images/larsMobile.jpg);
         background-position: center;
     }
+
 
 
 
@@ -1072,20 +1130,29 @@ video {
         grid-auto-rows: 1fr 1fr;
     }
 
+    .logo {
+        width: 25vw;
 
 
+
+    }
+
+    .overlayPicture {
+        width: 70vw;
+
+
+    }
 }
-
 
 @media all and (max-width: 425px) {
     .wrapperHome {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
-    grid-gap: 2em;
-    padding: 0 1em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
+        grid-gap: 2em;
+        padding: 0 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
 
 }
 
@@ -1166,7 +1233,6 @@ video {
 }
 
 /*  end of slider for the pictures /////////////////////////////////////*/
-
 
 
 
