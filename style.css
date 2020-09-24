@@ -24,10 +24,6 @@ html {
 
 }
 
-
-
-
-
 #ourTeam {
     background-color: rgba(51, 51, 51, 0.8);
 
@@ -114,7 +110,7 @@ nav {
     display: none;
 }
 
-#menu:checked ~ nav {
+#menu:checked~nav {
     display: block;
 
 }
@@ -124,7 +120,7 @@ nav {
 
 }
 
-#menu1:checked ~ nav {
+#menu1:checked~nav {
     display: block;
 
 }
@@ -277,7 +273,7 @@ nav {
     background-color: #495761;
     color: #fff;
     padding: 1.2em;
-    -webkit-box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 10px 20px 50px 10px rgba(0, 0, 0, 0.5);
 }
 
 .ptext .border.transp {
@@ -647,7 +643,7 @@ nav {
     transform-style: preserve-3d;
     perspective: 600px;
     transition: 0.5s;
-    box-shadow:  0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .17);
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .17);
 
 
 
@@ -880,8 +876,9 @@ video {
 
 .recipeImg {
     width: 100%;
-    height: 100%;
     overflow: hidden;
+    max-height: 80%;
+    object-fit: cover;
 
 }
 
@@ -1233,8 +1230,3 @@ video {
 }
 
 /*  end of slider for the pictures /////////////////////////////////////*/
-
-
-
-
-
